@@ -3,6 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
-main{
-    height: 100vh;
+
+.flex{
+    display: flex;
 }
+
+/* Sezione intera  */
+section{
+    height: 100vh;
+    background-color: black;
+}
+
+/* Header */
+header{
+    justify-content: flex-end;
+    color: white;
+    padding: 5px;
+}
+header div{
+    margin-left: 10px;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
