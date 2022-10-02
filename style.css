@@ -12,6 +12,7 @@
 section{
     height: 100vh;
     background-color: black;
+    flex-direction: column;
 }
 
 /* Header */
@@ -19,6 +20,7 @@ header{
     justify-content: flex-end;
     color: white;
     padding: 5px;
+    margin-bottom: 10px;
 }
 header div{
     margin-left: 10px;
@@ -30,11 +32,61 @@ header div{
 /* Main */
 
 main{
-    display: flex;
     flex-grow: 2;
+    flex-wrap: wrap;
     justify-content: center;
+    overflow: auto;
+}
+.card{
+    height: calc(100%/5);
+    width: calc(100%/8);
+    background-image: url("img/lorem immage.png");
+    background-size: contain;
+    margin: 1px;
 }
 
+
+/* FOOTER */
+footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(116, 112, 112);
+}
+
+/* Colonna di sinistra */
+
+.f-sinistra div{
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.f-sinistra span{
+    font-size: smaller;
+    margin-left: 10px;
+}
+
+/* Colonna di destra */
+.f-centrale div{
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.f-centrale span{
+    font-size: smaller;
+    margin-left: 10px;
+}
+.green{
+    color: rgb(3, 184, 3);
+}
+
+/* Colonna di destra */
+.f-destra{
+    color: red;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
 
 
 
